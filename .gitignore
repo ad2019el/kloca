@@ -1,0 +1,17 @@
+# Dépendances
+node_modules/
+
+# Secrets / config locale
+.env
+.env.local
+
+# Logs
+*.log
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
