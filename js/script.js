@@ -38,29 +38,31 @@ afficherVoitures(voitures);
 const btnRechercher = document.querySelector("#btn-rechercher");
 const inputTexte = document.querySelector("#recherche-texte");
 const filtreMarque = document.querySelector("#filtre-marque");
-const filrePrix = document.querySelector("#filtre-prix");
+const filtrePrix = document.querySelector("#filtre-prix"); // ⚠️ Correction du "t"
 
 btnRechercher.addEventListener("click", () => {
     const texte = inputTexte.value.toLowerCase();
     const marque = filtreMarque.value;
-    const prixMax = parseInt(filrePrix.value);
+    const prixMax = parseInt(filtrePrix.value);
 
-    // On filtre le tableau
     const voituresFiltrees = voitures.filter(voiture => {
-        // Condition 1 : Le texte (marque ou modèle) correspond
+        // Recherche par texte (dans la marque OU le modèle)
         const correspondTexte = voiture.marque.toLowerCase().includes(texte) || 
                                 voiture.modele.toLowerCase().includes(texte);
         
-        // Condition 2 : La marque sélectionnée correspond (ou "Toutes")
+        // Recherche par marque (menu déroulant)
         const correspondMarque = marque === "" || voiture.marque.toLowerCase() === marque.toLowerCase();
-        const correspondPrix = voiture.prix <=prixMax;
+        
+        // Recherche par prix
+        const correspondPrix = voiture.prix <= prixMax;
+
         return correspondTexte && correspondMarque && correspondPrix;
     });
 
     afficherVoitures(voituresFiltrees);
 });
-inputTexte.addEventListener("input", ()=>{
-    btnRechercher.click();
-});
-filtreMarque.addEventListener("change", ()=> btnRechercher.click());
-filrePrix.addEventListener("change", ()=> btnRechercher.click());
+
+// Recherche en direct
+inputTexte.addEventListener("input", () => btnRechercher.click());
+filtreMarque.addEventListener("change", () => btnRechercher.click());
+filtrePrix.addEventListener("change", () => btnRechercher.click()); // ⚠️ Correction ici aussi

@@ -156,6 +156,10 @@ nav a:hover{
   flex: 1;
   min-width: 180px;
 }
+.barre-recherche input:focus,
+.barre-recherche select:focus{
+  border-color: var(--couleur-primaire);
+}
 .barre-recherche button{
   background: var(--couleur-primaire);
   color: white;
@@ -164,8 +168,12 @@ nav a:hover{
   border-radius: 8px;
   cursor: pointer;
   font-weight: bold;
+  font-size: 1rem;
+  transition: background 0.3s;
 }
-
+.barre-recherche button:hover {
+    background: var(--couleur-secondaire);
+}
 .fiche{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -244,6 +252,12 @@ nav a:hover{
 .btn-contact:hover{
   transform: scale(1.05);
 }
+.recherche{
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
 /*footer*/
 footer{
   background-color: var(--couleur-secondaire);
