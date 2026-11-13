@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="ltr" class="notranslate" translate="no">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="google" content="notranslate"/>
@@ -18,26 +18,29 @@
                 <a href="publier.html">Publier une annonce</a>
         </nav>                
     </header>
-    <body>
+    <section class="recherche"></section>
          <div class="barre-recherche">
-            <input type="text" placeholder="Votre recherche ici">
-            <select >
-                <option >Toutes les marques</option>
-                <option>Renault</option>
-                <option>peugeot</option>
-                <option>Volkswagen</option>
-                <option>Mercedes</option>
-                <option>Bmw</option>
-                <option>Porshe</option>
+            <input type="text" placeholder="Votre recherche ici" id="recherche-texte">
+            <select id="filtre-marque">
+                <option value="">Toutes les marques</option>
+                 <option value="Renault">Renault</option>
+                 <option value="Peugeot">Peugeot</option>
+                 <option value="Volkswagen">Volkswagen</option>
+                 <option value="Mercedes">Mercedes</option>
+                 <option value="Seat">Seat</option>
+                 <option value="BMW">BMW</option>
+                 <option value="Hyundai">Hyundai</option>
+                 <option value="Geely">Geely</option>
+                 <option value="Porsche">Porsche</option>
             </select>
-            <select>
-                <option>Prix max</option>
-                <option>1 000 000 DZD</option>
-                <option>2 000 000 DZD</option>
-                <option>3 000 000 DZD</option>
-                <option>5 000 000 DZD</option>
+            <select id="filtre-prix">
+                <option value="99999999">Prix max</option>
+                <option value="1000000">1 000 000 DZD</option>
+                <option value="2000000">2 000 000 DZD</option>
+                <option value="3000000">3 000 000 DZD</option>
+                <option value="5000000">5 000 000 DZD</option>
             </select>
-             <button>Rechercher</button>
+             <button id="btn-rechercher">Rechercher</button>
         </div>
 </section>
     <!--VEHICULES EN VEDETTE-->
@@ -45,77 +48,15 @@
     <section class="vidette">
         <h2>Véhicules en vedette</h2>
        
-        <div class="grille-vehicules">
-            <!--Carte 1-->
-           <article class="carte-vehicule">
-                <img src="img/voit01.jpg" alt="Renault Clio 4">
-                <div class="carte-contenu">
-                    <h3>Renault Clio 4</h3>
-                    <p class="specs">2019 · Diesel · 85 000 km</p>
-                    <p class="prix">1 850 000 DZD</p>
-                    <a href="fiche.html" class="btn-voir">Voir détails</a>
-                </div>
-            </article>
-
-            <!-- Carte 2 -->
-            <article class="carte-vehicule">
-                <img src="img/voit02.jpg" alt="Peugeot 208">
-                <div class="carte-contenu">
-                    <h3>Peugeot 208</h3>
-                    <p class="specs">2021 · Essence · 32 000 km</p>
-                    <p class="prix">2 900 000 DZD</p>
-                    <a href="fiche.html" class="btn-voir">Voir détails</a>
-                </div>
-            </article>
-
-            <!-- Carte 3 -->
-            <article class="carte-vehicule">
-                <img src="img/voit03.jpg" alt="Volkswagen Golf 7">
-                <div class="carte-contenu">
-                    <h3>Volkswagen Golf 7</h3>
-                    <p class="specs">2018 · Essence · 95 000 km</p>
-                    <p class="prix">3 200 000 DZD</p>
-                    <a href="fiche.html" class="btn-voir">Voir détails</a>
-                </div>
-            </article>
-
-             <!--Carte 4-->
-           <article class="carte-vehicule">
-                <img src="img/voit4.jpg" alt="Renault Clio 4">
-                <div class="carte-contenu">
-                    <h3>Renault Clio 4</h3>
-                    <p class="specs">2019 · Diesel · 85 000 km</p>
-                    <p class="prix">1 850 000 DZD</p>
-                    <a href="fiche.html" class="btn-voir">Voir détails</a>
-                </div>
-            </article>
-
-            <!-- Carte 5 -->
-            <article class="carte-vehicule">
-                <img src="img/voit05.jpg" alt="Peugeot 208">
-                <div class="carte-contenu">
-                    <h3>Peugeot 208</h3>
-                    <p class="specs">2021 · Essence · 32 000 km</p>
-                    <p class="prix">2 900 000 DZD</p>
-                    <a href="fiche.html" class="btn-voir">Voir détails</a>
-                </div>
-            </article>
-
-            <!-- Carte 6 -->
-            <article class="carte-vehicule">
-                <img src="img/voit6.jpg" alt="Volkswagen Golf 7">
-                <div class="carte-contenu">
-                    <h3>Volkswagen Golf 7</h3>
-                    <p class="specs">2018 · Essence · 95 000 km</p>
-                    <p class="prix">3 200 000 DZD</p>
-                    <a href="fiche.html" class="btn-voir">Voir détails</a>
-                </div>
-            </article>
+        <div class="grille-vehicules" id="grille">
+           
         </div>
     </section>
      <footer>
         <p>© 2026 KLOCA – Tous les prix affichés, sans exception 💎</p>
     </footer>
+    <script src="js/donnees.js"></script>
     <script src="js/script.js"></script>
+    
 </body>
 </html>
