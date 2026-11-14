@@ -10,6 +10,7 @@ const voitures=[
         prix: 1850000,
         image: "img/voit05.jpg",
         localisation: "Alger",
+        boite: "Manuelle"
     },
     {
         id: 2,
@@ -21,7 +22,8 @@ const voitures=[
         kilometrage: 32000,
         prix: 2900000,
         image: "img/voit6.jpg",
-        localisation: "Oran"
+        localisation: "Oran",
+        boite: "Manuelle"
     },
     {
         id: 3,
@@ -33,7 +35,8 @@ const voitures=[
         kilometrage: 95000,
         prix: 3200000,
         image: "img/voit4.jpg",
-        localisation: "Constantine"
+        localisation: "Constantine",
+        boite: "Automatique"
     },
      {
         id:4,
@@ -46,6 +49,7 @@ const voitures=[
         prix: 13000000,
         image: "img/voit02.jpg",
         localisation: "Alger",
+        boite: "Automatique"
     },
     {
         id: 6,
@@ -57,7 +61,8 @@ const voitures=[
         kilometrage: 29000,
         prix: 10900000,
         image: "img/voit01.jpg",
-        localisation: "Oran"
+        localisation: "Oran",
+        boite: "Automatique"
     },
     {
         id: 7,
@@ -69,7 +74,8 @@ const voitures=[
         kilometrage: 1000,
         prix: 4200000,
         image: "img/coolrey.jpg",
-        localisation: "Sétif"
+        localisation: "Sétif",
+        boite: "Automatique"
     },
      {
         id:8,
@@ -82,6 +88,7 @@ const voitures=[
         prix: 4850000,
         image: "img/megne4.jpg",
         localisation: "Alger",
+        boite: "Manuelle"
     },
     {
         id: 9,
@@ -93,7 +100,8 @@ const voitures=[
         kilometrage: 22000,
         prix: 6900000,
         image: "img/308.jpg",
-        localisation: "Oran"
+        localisation: "Oran",
+        boite: "Manuelle"
     },
     {
         id: 10,
@@ -105,7 +113,8 @@ const voitures=[
         kilometrage: 95000,
         prix: 5200000,
         image: "img/caddy.jpg",
-        localisation: "Constantine"
+        localisation: "Constantine",
+        boite: "Manuelle"
     },
      {
         id:11,
@@ -118,6 +127,7 @@ const voitures=[
         prix: 2850000,
         image: "img/mg5.jpg",
         localisation: "Alger",
+        boite: "Manuelle"
     },
     {
         id: 12,
@@ -129,7 +139,8 @@ const voitures=[
         kilometrage: 32000,
         prix: 6900000,
         image: "img/tucson.jpg",
-        localisation: "Oran"
+        localisation: "Oran",
+        boite: "Automatique"
     },
     {
         id: 13,
@@ -141,7 +152,8 @@ const voitures=[
         kilometrage: 195000,
         prix: 3700000,
         image: "img/leon.jpg",
-        localisation: "Constantine"
+        localisation: "Constantine",
+        boite: "Manuelle"
     }
     
 ];

@@ -257,6 +257,13 @@ nav a:hover{
   margin: 40px auto 0;
   padding: 0 20px;
 }
+.btn-retour{
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--couleur-primaire); 
+  text-decoration: none;
+  font-weight: bold; 
+}
 
 /*footer*/
 footer{

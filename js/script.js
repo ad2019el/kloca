@@ -24,7 +24,7 @@ function afficherVoitures(listeVoitures) {
                     <h3>${voiture.marque} ${voiture.modele}</h3>
                     <p class="specs">${voiture.annee} · ${voiture.carburant} · ${voiture.kilometrage.toLocaleString('fr-FR')} km</p>
                     <p class="prix">${prixFormate} DZD</p>
-                    <a href="fiche.html" class="btn-voir">Voir détails</a>
+                    <a href="fiche.html?id=${voiture.id}" class="btn-voir">Voir détails</a>
                 </div>
             </article>
         `;
